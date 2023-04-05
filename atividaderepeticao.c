@@ -4,7 +4,7 @@ int main ()
 {
     
 
-    int i, repeticao1, repeticao2;
+    int i, repeticao1, repeticao2, cont = 0;
 
     printf("Insira um numero:");
     scanf("%d", &repeticao1);
@@ -13,14 +13,18 @@ int main ()
     scanf("%d", &repeticao2);
 
 
-
-    for ( i = repeticao1; i < repeticao2; i++)
+     for ( i = repeticao1; i < repeticao2; i++)
     {
-        if ( i % 2 == 1)
+       
+        if ( i % 3 == 0 && cont < 5)
         {
             printf("%d\n", i);
-        }
+            cont++;
+        } 
+        
        
-    }
+    }    
     
+       
 }
+
